@@ -1,0 +1,180 @@
+
+
+.adminDash2_wrapper{
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f7fb;
+  padding: 40px 20px;
+}
+
+.adminDash2_header{
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  margin-bottom: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.adminDash2_header h1{
+  font-size: 38px;
+  color: #091540;
+}
+
+.adminDash2_actions{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.adminDash2_actions button{
+  border: none;
+  padding: 13px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+
+.adminDash2_selectBtn{
+  background: #2563eb;
+}
+
+.adminDash2_multiDelete{
+  background: #dc2626;
+}
+
+.adminDash2_logoutBtn{
+  background: #091540;
+}
+
+.adminDash2_list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.adminDash2_card{
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow:
+  0 10px 35px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.adminDash2_card:hover{
+  transform: translateY(-4px);
+}
+
+.adminDash2_top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.adminDash2_top h2{
+  color: #091540;
+  font-size: 28px;
+}
+
+.adminDash2_top input{
+  width: 20px;
+  height: 20px;
+}
+
+.adminDash2_info p{
+  margin-bottom: 14px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.adminDash2_info strong{
+  color: #111;
+  margin-right: 6px;
+}
+
+.adminDash2_btnGroup{
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.adminDash2_btnGroup a{
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.adminDash2_callBtn{
+  background: #2563eb;
+}
+
+.adminDash2_whatsappBtn{
+  background: #16a34a;
+}
+
+.adminDash2_mailBtn{
+  background: #7c3aed;
+}
+
+.adminDash2_btnGroup a:hover{
+  transform: translateY(-3px);
+}
+
+.adminDash2_deleteBtn{
+  width: 100%;
+  margin-top: 22px;
+  border: none;
+  background: #dc2626;
+  color: white;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.adminDash2_deleteBtn:hover{
+  background: #b91c1c;
+}
+
+@media(max-width:768px){
+
+  .adminDash2_header h1{
+    font-size: 28px;
+  }
+
+  .adminDash2_card{
+    padding: 22px;
+  }
+
+  .adminDash2_top h2{
+    font-size: 22px;
+  }
+}
+
+@media(max-width:500px){
+
+  .adminDash2_btnGroup{
+    flex-direction: column;
+  }
+
+  .adminDash2_btnGroup a{
+    text-align: center;
+  }
+
+}

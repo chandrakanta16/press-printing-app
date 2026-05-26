@@ -1,0 +1,172 @@
+.aboutSection{
+  width: 100%;
+  padding: 80px 6%;
+  background: linear-gradient(
+    135deg,
+    #020617,
+    #0f172a,
+    #111827
+  );
+  overflow: hidden;
+}
+
+.aboutContainer{
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT */
+
+.aboutLeft{
+  color: white;
+}
+
+.aboutTag{
+  display: inline-block;
+  padding: 8px 18px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 30px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+.aboutTitle{
+  font-size: 55px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.aboutDescription{
+  font-size: 18px;
+  line-height: 1.9;
+  color: #cbd5e1;
+  margin-bottom: 40px;
+}
+
+/* FEATURES */
+
+.aboutFeatures{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.aboutFeatureCard{
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 25px 20px;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.4s;
+  backdrop-filter: blur(8px);
+}
+
+.aboutFeatureCard:hover{
+  transform: translateY(-8px);
+  background: rgba(56,189,248,0.12);
+}
+
+.aboutFeatureCard h3{
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.aboutFeatureCard p{
+  color: #e2e8f0;
+  font-size: 15px;
+}
+
+/* RIGHT */
+
+.aboutRight{
+  display: flex;
+  justify-content: center;
+}
+
+.aboutImageCard{
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.4);
+
+  }
+ 
+
+.aboutImage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  
+}
+.aboutImageCard::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+.aboutImage:hover{
+  transform: scale(1.08);
+}
+.propiter{
+  padding-bottom: 20px;
+}
+
+/* MOBILE */
+
+@media(max-width: 992px){
+
+  .aboutContainer{
+    grid-template-columns: 1fr;
+  }
+
+  .aboutTitle{
+    font-size: 42px;
+  }
+
+}
+
+@media(max-width: 768px){
+
+  .aboutSection{
+    padding: 60px 5%;
+  }
+
+  .aboutTitle{
+    font-size: 34px;
+  }
+
+  .aboutDescription{
+    font-size: 16px;
+  }
+
+  .aboutFeatures{
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media(max-width: 480px){
+
+  .aboutFeatures{
+    grid-template-columns: 1fr;
+  }
+
+  .aboutTitle{
+    font-size: 28px;
+  }
+
+}
