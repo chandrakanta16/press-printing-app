@@ -278,7 +278,7 @@ Website:
 https://maasantosicomputer.vercel.app/
 
 Phone:
-+91 7682041399
++91 9861632842
 
 Location:
 Bhadrak, Odisha
